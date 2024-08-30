@@ -27,7 +27,7 @@ jobs:
         continue-on-error: true
         run: |
           echo "Release outputs:"
-          echo "${{ steps.release.outputs }}"
+          echo "${{ toJson(steps.release.outputs) }}"
 
   release-yellowstone:
     if: ${{needs.release-please.outputs--release_created}}
