@@ -42,7 +42,7 @@ jobs:
         run: |
           git submodule update --init --recursive --depth 1
           git fetch origin +refs/heads/qtrade:refs/remotes/origin/qtrade
-          git checkout --track origin/qtrade
+          git checkout origin/qtrade
       - uses: dtolnay/rust-toolchain@1.76.0    
       - name: Build
         uses: clechasseur/rs-cargo@v2
