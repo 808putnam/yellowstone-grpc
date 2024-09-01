@@ -1,5 +1,7 @@
 {
   "plugins": ["cargo-workspace"],
+
+  "last-release-sha": "9f1784038062346433cac482131ed501caca0b54",
   "packages": {
       "yellowstone-grpc-geyser": {
         "bump-minor-pre-major": false,
