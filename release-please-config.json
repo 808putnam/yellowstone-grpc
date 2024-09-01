@@ -1,13 +1,19 @@
 {
+  "release-as": "0.2.0",
+  "sequential-calls": true,
+  "separate-pull-requests": true,
+
   "plugins": ["cargo-workspace"],
   "packages": {
       "yellowstone-grpc-geyser": {
-        "changelog-path": "CHANGELOG.md",
-        "release-type": "rust",
         "bump-minor-pre-major": false,
         "bump-patch-for-minor-pre-major": false,
+        "component": "yellowstone-grpc-geyser",
+        "changelog-path": "CHANGELOG.md",
         "draft": false,
-        "prerelease": false
+        "prerelease": false,
+        "release-type": "rust",
+        "target-branch": "qtrade"
       }
     },
     "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"

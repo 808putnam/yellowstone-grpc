@@ -13,8 +13,8 @@ jobs:
   release-please:
     runs-on: ubuntu-20.04
     outputs:
-      yellowstone--tag_name: ${{ steps.release.outputs--tag_name}}
-      yellowstone--release_created: ${{ steps.release.outputs--release_created}}
+      yellowstone--tag_name: ${{ steps.release.outputs.yellowstone-grpc-geyser--tag_name}}
+      yellowstone--release_created: ${{ steps.release.outputs.yellowstone-grpc-geyser--release_created}}
     steps:
       - uses: googleapis/release-please-action@v4
         id: release
@@ -30,7 +30,7 @@ jobs:
           echo "${{ toJson(steps.release.outputs) }}"
 
   release-yellowstone:
-    if: ${{needs.release-please.outputs--release_created}}
+    if: ${{needs.release-please.outputs.yellowstone--release_created}}
     runs-on: ubuntu-20.04
     needs: release-please
     steps:
@@ -53,4 +53,4 @@ jobs:
       - name: Upload Release Artifact
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ needs.release-please.outputs--tag_name }} target/x86_64-unknown-linux-gnu/release/yellowstone-grpc-geyser
+        run: gh release upload ${{ needs.release-please.outputs.yellowstone--tag_name }} target/x86_64-unknown-linux-gnu/release/yellowstone-grpc-geyser
