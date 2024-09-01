@@ -10,8 +10,6 @@ license = { workspace = true }
 keywords = { workspace = true }
 publish = false
 
-# remove
-
 [lib]
 crate-type = ["cdylib", "rlib"]
 
