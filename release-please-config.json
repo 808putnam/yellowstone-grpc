@@ -4,12 +4,8 @@
 
   "packages": {
       "yellowstone-grpc-geyser": {
-        "bump-minor-pre-major": false,
-        "bump-patch-for-minor-pre-major": false,
         "component": "yellowstone-grpc-geyser",
         "changelog-path": "CHANGELOG.md",
-        "draft": false,
-        "prerelease": false,
         "release-type": "rust",
         "target-branch": "qtrade"
       }
