@@ -1,8 +1,4 @@
 {
-  "release-as": "0.2.0",
-  "sequential-calls": true,
-  "separate-pull-requests": true,
-
   "plugins": ["cargo-workspace"],
   "packages": {
       "yellowstone-grpc-geyser": {

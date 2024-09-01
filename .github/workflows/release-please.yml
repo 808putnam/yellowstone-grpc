@@ -40,7 +40,6 @@ jobs:
       - name: Pull & update submodules recursively
         run: |
           git submodule update --init --recursive --depth 1
-          cd solana/solana-accountsdb-plugin-postgres
           git fetch origin +refs/heads/qtrade:refs/remotes/origin/qtrade
           git remote set-branches --add origin qtrade
           git checkout --track origin/qtrade
