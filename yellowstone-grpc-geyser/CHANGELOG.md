@@ -7,6 +7,13 @@
 
 * attempting jumpstart ([26799a0](https://github.com/808putnam/yellowstone-grpc/commit/26799a0a9f5211e698ea5609599fc141a82a6075))
 
+## [0.2.3](https://github.com/808putnam/yellowstone-grpc/compare/yellowstone-grpc-geyser-v0.2.2...yellowstone-grpc-geyser-v0.2.3) (2024-09-01)
+
+
+### Bug Fixes
+
+* attempting jumpstart ([26799a0](https://github.com/808putnam/yellowstone-grpc/commit/26799a0a9f5211e698ea5609599fc141a82a6075))
+
 ## [0.2.2](https://github.com/808putnam/yellowstone-grpc/compare/yellowstone-grpc-geyser-v0.2.1...yellowstone-grpc-geyser-v0.2.2) (2024-09-01)
 
 
