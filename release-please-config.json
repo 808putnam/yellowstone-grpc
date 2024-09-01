@@ -4,6 +4,7 @@
 
   "packages": {
       "yellowstone-grpc-geyser": {
+        "separate-pull-requests": false,
         "changelog-path": "CHANGELOG.md",
         "release-type": "rust",
         "target-branch": "qtrade"
