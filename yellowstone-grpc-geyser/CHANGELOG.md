@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/808putnam/yellowstone-grpc/compare/yellowstone-grpc-geyser-v0.2.0...yellowstone-grpc-geyser-v0.2.1) (2024-09-01)
+
+
+### Bug Fixes
+
+* another attempt8 ([10d1a5f](https://github.com/808putnam/yellowstone-grpc/commit/10d1a5fdc79e6d2adfb925833fd0a7678d87835f))
+
 ## 0.2.0 (2024-09-01)
 
 
