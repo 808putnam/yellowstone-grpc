@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/808putnam/yellowstone-grpc/compare/yellowstone-grpc-geyser-v0.2.3...yellowstone-grpc-geyser-v0.3.0) (2024-09-01)
+
+
+### Features
+
+* forcing build ([d84a365](https://github.com/808putnam/yellowstone-grpc/commit/d84a3653d17261854cc0cf012feacfeb9bc1521e))
+
+
+### Bug Fixes
+
+* forcing build ([689162e](https://github.com/808putnam/yellowstone-grpc/commit/689162e2550389b0374eb6d9d74e1a5084461bb1))
+
 ## [0.2.3](https://github.com/808putnam/yellowstone-grpc/compare/yellowstone-grpc-geyser-v0.2.2...yellowstone-grpc-geyser-v0.2.3) (2024-09-01)
 
 
