@@ -16,7 +16,7 @@ on:
       - 'v1.17'
       - 'v1.18'
     tags:
-      - 'v*'
+      - '*'
       - 'tools-v*'
   workflow_dispatch:
 
