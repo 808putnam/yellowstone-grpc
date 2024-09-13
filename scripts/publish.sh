@@ -8,5 +8,5 @@ FULL_VERSION=$1
 #   exit 1
 # fi
 
-git tag -a ${FULL_VERSION}
-git push origin ${FULL_VERSION}
+git tag -a "${FULL_VERSION}"
+git push origin "${FULL_VERSION}"
