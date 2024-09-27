@@ -6,15 +6,7 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  pull_request:
-    paths:
-      - '.github/workflows/release.yml'
   push:
-    branches:
-      - 'master'
-      - 'v1.16'
-      - 'v1.17'
-      - 'v1.18'
     tags:
       - '*'
       - 'tools-v*'
