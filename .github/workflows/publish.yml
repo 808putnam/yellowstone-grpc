@@ -8,8 +8,7 @@ concurrency:
 on:
   push:
     tags:
-      - '*'
-      - 'tools-v*'
+      - 'v*'
   workflow_dispatch:
 
 env:

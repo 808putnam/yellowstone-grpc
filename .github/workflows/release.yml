@@ -25,6 +25,7 @@ env:
 
 jobs:
   release:
+    if: false  # This will ignore the job
     strategy:
       matrix:
         os: [ubuntu-20.04, ubuntu-22.04]
