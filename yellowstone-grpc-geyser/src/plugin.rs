@@ -10,12 +10,10 @@ use {
         SlotStatus,
     },
     std::{
-        concat, env,
-        sync::{
+        concat, env, sync::{
             atomic::{AtomicBool, Ordering},
             Arc, Mutex,
-        },
-        time::Duration,
+        }, thread, time::Duration
     },
     tokio::{
         runtime::{Builder, Runtime},
@@ -62,6 +60,10 @@ impl GeyserPlugin for Plugin {
     }
 
     fn on_load(&mut self, config_file: &str, is_reload: bool) -> PluginResult<()> {
+        
+        // Pause execution for 5 seconds
+        thread::sleep(Duration::from_secs(20));
+        
         let config = Config::load_from_file(config_file)?;
 
         // Setup logger
