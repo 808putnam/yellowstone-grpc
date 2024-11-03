@@ -5,6 +5,5 @@ yellowstone-grpc-geyser/config-test.json
 dump.rdb
 *.sw?
 .idea/
-.vscode
 venv
 __pycache__/
