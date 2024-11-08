@@ -1,0 +1,4 @@
+custom-ledger/
+
+# Ignore temp folder
+temp/

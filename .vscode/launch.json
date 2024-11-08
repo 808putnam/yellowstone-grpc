@@ -7,6 +7,28 @@
             "request": "attach",
             "pid": "${command:PickProcess}",
             "sourceLanguages": ["rust"]
-        }
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Example of debugging integration test",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test",
+                    "<name of integration test>"
+                ],
+                "filter": {
+                    "kind": "test"
+                },
+                "cwd": "${workspaceFolder}"
+            },
+            "cwd": "${workspaceFolder}",
+            "env": {
+                // Place your environment variables here
+                "AUTH_HEADER": "<auth_header>",
+            },
+        },       
     ]
 }
