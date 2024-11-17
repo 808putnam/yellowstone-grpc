@@ -11,13 +11,22 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Example of debugging integration test",
+            "name": "Example for running cargo tests",
             "cargo": {
+                // These are the args to cargo test
+                // Example: cargo test --no-run --test grpc
                 "args": [
                     "test",
+                    // build but don't run the tests, a second step controlled by args below will run tests
                     "--no-run",
+                    // Specify the integration tests to run
                     "--test",
-                    "<name of integration test>"
+                    // Run only integration tests (not tested yet, might need single quotes)
+                    // "*",
+                    // Run a set of integration tests (grpc, http, ws)
+                    "grpc",
+                    // Run a specific integration test, must be used with the name of the integration test above
+                    "test_get_token_accounts"
                 ],
                 "filter": {
                     "kind": "test"
@@ -26,9 +35,23 @@
             },
             "cwd": "${workspaceFolder}",
             "env": {
-                // Place your environment variables here
                 "AUTH_HEADER": "<auth_header>",
+                "NETWORK": "MAINNET",
+                "REGION": "NY",
             },
-        },       
+            // These are the args after the --
+            // Example: cargo test -- --nocapture
+            // Run cargo test -- --help for more details
+            "args": [
+                // Don't capture stdout/stderr, uncomment to see output
+                "--nocapture",
+                // Run only ignored tests
+                // "--ignored",
+                // Run tests on sequentially on 1 thread
+                "--test-threads=1",
+                // Filter out a specific test
+                // "--skip=test_market_depth_stream_grpc"
+            ]
+        }
     ]
 }
