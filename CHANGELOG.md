@@ -12,6 +12,94 @@ The minor version will be incremented upon a breaking change and the patch versi
 
 ### Fixes
 
+- nodejs: fix port for https ([#502](https://github.com/rpcpool/yellowstone-grpc/pull/502))
+
+### Features
+
+### Breaking
+
+## 2024-12-16
+
+- yellowstone-grpc-client-simple-4.3.0
+- yellowstone-grpc-geyser-4.2.2
+- yellowstone-grpc-proto-4.1.1
+
+### Fixes
+
+- geyser: fix `lamports` filter ([#498](https://github.com/rpcpool/yellowstone-grpc/pull/498))
+
+### Features
+
+- example: add `ca_certificate` option ([#497](https://github.com/rpcpool/yellowstone-grpc/pull/497))
+
+## 2024-12-15
+
+- yellowstone-grpc-geyser-4.2.1
+
+### Fixes
+
+- geyser: fix `replay_stored_slots` ([#496](https://github.com/rpcpool/yellowstone-grpc/pull/496))
+
+## 2024-12-13
+
+- yellowstone-grpc-client-simple-4.2.0
+- yellowstone-grpc-client-4.1.0
+- yellowstone-grpc-geyser-4.2.0
+- yellowstone-grpc-proto-4.1.0
+
+### Fixes
+
+- nodejs: fix connector for custom port ([#488](https://github.com/rpcpool/yellowstone-grpc/pull/488))
+- nodejs: fix connector for host/hostname ([#491](https://github.com/rpcpool/yellowstone-grpc/pull/491))
+
+### Features
+
+- proto: add tonic feature ([#474](https://github.com/rpcpool/yellowstone-grpc/pull/474))
+- proto: add `from_slot` ([#477](https://github.com/rpcpool/yellowstone-grpc/pull/477))
+- proto: add field `created_at` to update message ([#479](https://github.com/rpcpool/yellowstone-grpc/pull/479))
+- nodejs: add parse err function ([#483](https://github.com/rpcpool/yellowstone-grpc/pull/483))
+- geyser: add gRPC server options to config ([#493](https://github.com/rpcpool/yellowstone-grpc/pull/493))
+
+## 2024-12-01
+
+- yellowstone-grpc-client-simple-4.1.0
+- yellowstone-grpc-geyser-4.1.0
+
+### Features
+
+- nodejs: add parse tx function ([#471](https://github.com/rpcpool/yellowstone-grpc/pull/471))
+- geyser: use default compression as gzip and zstd ([#475](https://github.com/rpcpool/yellowstone-grpc/pull/475))
+- example: add connection options to Rust client ([#478](https://github.com/rpcpool/yellowstone-grpc/pull/478))
+- geyser: add worker_threads and affinity ([#481](https://github.com/rpcpool/yellowstone-grpc/pull/481))
+
+## 2024-11-28
+
+- yellowstone-grpc-geyser-4.0.1
+
+### Fixes
+
+- geyser: raise default filter name length limit ([#473](https://github.com/rpcpool/yellowstone-grpc/pull/473))
+
+## 2024-11-21
+
+- yellowstone-grpc-client-simple-4.0.0
+- yellowstone-grpc-client-4.0.0
+- yellowstone-grpc-geyser-4.0.0
+- yellowstone-grpc-proto-4.0.0
+
+### Features
+
+- solana: upgrade to v2.1.1 ([#468](https://github.com/rpcpool/yellowstone-grpc/pull/468))
+
+## 2024-11-20
+
+- yellowstone-grpc-client-simple-3.0.0
+- yellowstone-grpc-client-3.0.0
+- yellowstone-grpc-geyser-3.0.0
+- yellowstone-grpc-proto-3.0.0
+
+### Fixes
+
 - examples: fix commitment in TypeScript example ([#440](https://github.com/rpcpool/yellowstone-grpc/pull/440))
 - geyser: fix missed status messages ([#444](https://github.com/rpcpool/yellowstone-grpc/pull/444))
 
@@ -19,8 +107,22 @@ The minor version will be incremented upon a breaking change and the patch versi
 
 - proto: use `gzip`/`zstd` features by default ([#436](https://github.com/rpcpool/yellowstone-grpc/pull/436))
 - geyser: optimize consuming of new filters ([#439](https://github.com/rpcpool/yellowstone-grpc/pull/439))
+- proto: add filter by lamports ([#369](https://github.com/rpcpool/yellowstone-grpc/pull/369))
+- geyser: use Arc wrapped messages in block message ([#446](https://github.com/rpcpool/yellowstone-grpc/pull/446))
+- node: remove generated grpc files ([#447](https://github.com/rpcpool/yellowstone-grpc/pull/447))
+- proto: add txn_signature filter ([#445](https://github.com/rpcpool/yellowstone-grpc/pull/445))
+- examples: add progress bar to client tool ([#456](https://github.com/rpcpool/yellowstone-grpc/pull/456))
+- proto: add mod `plugin` with `FilterNames` cache ([#458](https://github.com/rpcpool/yellowstone-grpc/pull/458))
+- proto: move enum Message from geyser crate ([#459](https://github.com/rpcpool/yellowstone-grpc/pull/459))
+- proto: move `Filter` from geyser crate ([#466](https://github.com/rpcpool/yellowstone-grpc/pull/466))
+- geyser: serialize from custom message istead of generated ([#467](https://github.com/rpcpool/yellowstone-grpc/pull/467))
+- proto: implement encoding instead of clone to generated ([#465](https://github.com/rpcpool/yellowstone-grpc/pull/465))
 
 ### Breaking
+
+- geyser: limit length of filter name ([#448](https://github.com/rpcpool/yellowstone-grpc/pull/448))
+- proto: change error type in mod `convert_from` ([#457](https://github.com/rpcpool/yellowstone-grpc/pull/457))
+- geyser: remove option `block_fail_action` ([#463](https://github.com/rpcpool/yellowstone-grpc/pull/463))
 
 ## 2024-10-04
 
